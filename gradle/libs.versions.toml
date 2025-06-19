@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.3"
+converterGson = "2.9.0"
 kotlin = "2.0.0"
 coreKtx = "1.16.0"
 junit = "4.13.2"
@@ -12,6 +13,7 @@ retrofit = "2.9.0"
 
 [libraries]
 coil-compose = { module = "io.coil-kt:coil-compose" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 lifecycle-viewmodel-compose = "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
