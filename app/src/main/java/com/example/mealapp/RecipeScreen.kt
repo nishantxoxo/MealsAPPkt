@@ -1,5 +1,6 @@
 package com.example.mealapp
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,6 +18,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import coil.compose.rememberAsyncImagePainter
 
 @Composable
 fun RecipeScreen(modifier: Modifier = Modifier){
@@ -52,6 +54,11 @@ fun CategoryScreen(categories: List<category>){
 @Composable
 fun CategoryItem(category: category){
     Column (modifier = Modifier.padding(8.dp).fillMaxSize()){
+//        Image(
+//            painter = rememberAsyncImagePainter(category.strCategoryThumb)
+//        )
+
+
         Text(
             text = category.strCategory,
             color = Color.Black,
