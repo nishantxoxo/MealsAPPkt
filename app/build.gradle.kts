@@ -43,7 +43,7 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
-
+    implementation(libs.androidx.navigation.compose)
 
     implementation(libs.coil.compose)
     implementation(libs.androidx.core.ktx)
